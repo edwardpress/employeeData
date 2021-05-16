@@ -1,32 +1,30 @@
-Description
+## Description
 
 Develop a frontend application that does the following:
 
-Read employee data as JSON and display in a table with following columns:
-a. Employee Name (Merge firstname and lastname to form fullname) - checked
+1. Read employee data as JSON and display in a table with following columns:
+	- Employee Name (Merge firstname and lastname to form fullname) - checked
+	- Date joined (Readable formatted date) - checked
+	- Salary (Currency: MYR) - checked
 
-b. Date joined (Readable formatted date) - checked
+2. The table should be initially sorted by Date Joined - Descending - checked
 
-c. Salary (Currency: MYR) - checked
+3. Display total number of employees (Readable formatted date) - checked
 
-The table should be initially sorted by Date Joined - Descending - checked
+4. Display the highest earning employee and employee most recently joined: (Currency: MYR) - checked
 
-Display total number of employees (Readable formatted date) - checked
+5. Create sort on click functionality for other columns - checked
 
-Display the highest earning employee and employee most recently joined: (Currency: MYR) - checked
+## Requirement
 
-Create sort on click functionality for other columns - checked
+1. Must be developed in either React or Angular - Angular
 
-Requirement
+2. Use CSS preprocessor like SCSS, SASS, LESS, etc - Scss
 
-Must be developed in either React or Angular - Angular
+3. Use Typescript (Optional but it's a plus) - TypeScript
 
-Use CSS preprocessor like SCSS, SASS, LESS, etc - Scss
+4. Use any CSS framework (e.g. Bootstrap) - Ngx Bootstrap
 
-Use Typescript (Optional but it's a plus) - TypeScript
+5. Write at least a single unit test file in any test framework and test runner - Karma/Jasmine
 
-Use any CSS framework (e.g. Bootstrap) - Ngx Bootstrap
-
-Write at least a single unit test file in any test framework and test runner - Karma/Jasmine
-
-Develop the application and store it in public GitHub repository (or any Git provider). Once done, just share the link to the repository.
+6. Develop the application and store it in public GitHub repository (or any Git provider). Once done, just share the link to the repository.
