@@ -1,27 +1,32 @@
-# EmployeeData
+Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+Develop a frontend application that does the following:
 
-## Development server
+Read employee data as JSON and display in a table with following columns:
+a. Employee Name (Merge firstname and lastname to form fullname) - checked
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+b. Date joined (Readable formatted date) - checked
 
-## Code scaffolding
+c. Salary (Currency: MYR) - checked
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The table should be initially sorted by Date Joined - Descending - checked
 
-## Build
+Display total number of employees (Readable formatted date) - checked
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Display the highest earning employee and employee most recently joined: (Currency: MYR) - checked
 
-## Running unit tests
+Create sort on click functionality for other columns - checked
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Requirement
 
-## Running end-to-end tests
+Must be developed in either React or Angular - Angular
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Use CSS preprocessor like SCSS, SASS, LESS, etc - Scss
 
-## Further help
+Use Typescript (Optional but it's a plus) - TypeScript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Use any CSS framework (e.g. Bootstrap) - Ngx Bootstrap
+
+Write at least a single unit test file in any test framework and test runner - Karma/Jasmine
+
+Develop the application and store it in public GitHub repository (or any Git provider). Once done, just share the link to the repository.
