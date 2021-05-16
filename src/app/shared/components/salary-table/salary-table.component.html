@@ -1,0 +1,76 @@
+<table class="table table-striped border mx-1 p-2">
+  <thead>
+    <tr class="d-flex">
+      <th class="col-1"></th>
+      <th
+        [tableSort]="employeeData"
+        order="asc"
+        name="firstname"
+        type="string"
+        class="col-xs-3 col-md-4"
+        #nameHeader
+        (click)="updateSortingHeader(nameHeader)"
+      >
+        Full Name
+
+        <span *ngIf="nameSortingHeader == 'asc'"
+          ><i-bs name="caret-up"></i-bs
+        ></span>
+        <span *ngIf="nameSortingHeader == 'desc'"
+          ><i-bs name="caret-down"></i-bs
+        ></span>
+      </th>
+      <th
+        [tableSort]="employeeData"
+        order="asc"
+        name="dateJoined"
+        type="date"
+        class="col-xs-3 col-md-4"
+        #dateHeader
+        (click)="updateSortingHeader(dateHeader)"
+      >
+        Join Date
+
+        <span *ngIf="dateSortingHeader == 'asc'"
+          ><i-bs name="caret-up"></i-bs
+        ></span>
+        <span *ngIf="dateSortingHeader == 'desc'"
+          ><i-bs name="caret-down"></i-bs
+        ></span>
+      </th>
+      <th
+        [tableSort]="employeeData"
+        order="asc"
+        name="salary"
+        type="string"
+        class="col-xs-2 col-md-3"
+        #salaryHeader
+        (click)="updateSortingHeader(salaryHeader)"
+      >
+        Salary
+
+        <span *ngIf="salarySortingHeader == 'asc'"
+          ><i-bs name="caret-up"></i-bs
+        ></span>
+        <span *ngIf="salarySortingHeader == 'desc'"
+          ><i-bs name="caret-down"></i-bs
+        ></span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employeeData; let i = index" class="d-flex">
+      <th class="col-1">
+        {{ i + 1 }}
+      </th>
+
+      <td class="col-xs-3 col-md-4">
+        {{ getFullName(employee.firstname, employee.lastname) }}
+      </td>
+      <td class="col-xs-3 col-md-4">
+        {{ employee.dateJoined | date: "dd/mm/yyyy" }}
+      </td>
+      <td class="col-xs-2 col-md-3">{{ employee.salary | currency: "MYR" }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,10 @@
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #d7b377;
+  color: white;
+}
+
+.table-striped > thead {
+  background-color: #8f754f;
+  color: white;
+}

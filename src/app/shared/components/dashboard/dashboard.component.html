@@ -1,0 +1,27 @@
+<div class="row mx-1 my-1">
+  <div class="col-sm-12 col-md-3 py-2 my-2 border employeeCountContainer">
+    <div class="row">
+      <div class="col">
+        <i-bs name="person" width="4rem" height="4rem"></i-bs>
+      </div>
+      <div class="col h1 employeeCount">{{ employeeCount }}</div>
+    </div>
+  </div>
+
+  <div class="col py-2 my-2 ml-2 border h5 text-left employeeSummaryContainer">
+    <div class="row py-2">
+      <div class="col-sm-12 col-md-5">Highest Earning Employee:</div>
+      <div class="col-sm-12 col-md-5">
+        {{ highestEarningEmployee.firstname }}
+        {{ highestEarningEmployee.lastname }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-5">Employee Most Recently Joined :</div>
+      <div class="col-sm-12 col-md-5">
+        {{ mostRecentEmployee.firstname }} {{ mostRecentEmployee.lastname }}
+      </div>
+    </div>
+  </div>
+</div>
